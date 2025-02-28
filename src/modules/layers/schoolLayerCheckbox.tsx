@@ -7,7 +7,7 @@ import { Map, MapBrowserEvent, Overlay } from "ol";
 import { FeatureLike } from "ol/Feature";
 
 const source = new VectorSource({
-  url: "/geojson/skoler.geojson",
+  url: "/public/geojson/skoler.geojson",
   format: new GeoJSON(),
 });
 const schoolLayer = new VectorLayer({ source });
