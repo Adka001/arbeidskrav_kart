@@ -7,7 +7,7 @@ import { Map, MapBrowserEvent, Overlay } from "ol";
 import { FeatureLike } from "ol/Feature";
 
 const source = new VectorSource({
-  url: "public/geojson/skoler.geojson",
+  url: "/arbeidskrav_kart/public/geojson/skoler.geojson",
   format: new GeoJSON(),
 });
 const schoolLayer = new VectorLayer({ source });
@@ -55,4 +55,3 @@ export function SchoolLayerCheckbox({
     </button>
   );
 }
-//classname på button og input er lagt til i etterkant!
