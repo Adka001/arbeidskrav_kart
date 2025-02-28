@@ -9,8 +9,8 @@ import "ol/ol.css";
 import "./application.css";
 import { Layer } from "ol/layer";
 import { SchoolLayerCheckbox } from "./modules/layers/schoolLayerCheckbox";
-import {DefenceLayerCheckbox} from "./modules/layers/sivilforsvarsdistrikterLayerCheckbox";
-import {ShelterLayerCheckbox} from "./modules/layers/offentligetilfluktsromLayerCheckbox";
+import { DefenceLayerCheckbox } from "./modules/layers/sivilforsvarsdistrikterLayerCheckbox";
+import { ShelterLayerCheckbox } from "./modules/layers/offentligetilfluktsromLayerCheckbox";
 
 
 
