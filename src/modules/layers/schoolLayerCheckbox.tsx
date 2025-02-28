@@ -49,7 +49,7 @@ export function SchoolLayerCheckbox({
       <input className="checkbox" type={"checkbox"} checked={checked} />
       Show schools
       <div ref={overlayRef}>
-        Clicked schools:{" "}
+        School:{" "}
         {selectedSchools.map((s) => s.getProperties().navn).join(", ")}
       </div>
     </button>

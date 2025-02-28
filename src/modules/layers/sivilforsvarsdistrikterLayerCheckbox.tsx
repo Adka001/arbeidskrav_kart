@@ -49,7 +49,7 @@ export function DefenceLayerCheckbox({
       <input className="checkbox" type={"checkbox"} checked={checked} />
       Defence districts
       <div ref={overlayRef}>
-        Clicked defence:{" "}
+        District:{" "}
         {selectedDefence.map((s) => s.getProperties().navn).join(", ")}
       </div>
     </button>
