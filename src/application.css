@@ -1,0 +1,36 @@
+* {
+    margin: unset;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100dvh;
+}
+
+nav {
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.25rem;
+}
+
+.ol-overlay-container {
+    background-color: white;
+    max-width: 25ch;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+.button {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin: 0;
+}
