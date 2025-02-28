@@ -7,15 +7,15 @@ import { Map, MapBrowserEvent, Overlay } from "ol";
 import { FeatureLike } from "ol/Feature";
 
 const source = new VectorSource({
-  url: "https://adka001.github.io/arbeidskrav_kart/geojson/skoler.geojson",
+  url: "https://adka001.github.io/arbeidskrav_kart/geojson/offentligetilfluktsrom.geojson",
   format: new GeoJSON(),
 });
-const schoolLayer = new VectorLayer({ source });
+const shelterLayer = new VectorLayer({ source });
 const overlay = new Overlay({
   positioning: "bottom-center",
 });
 
-export function SchoolLayerCheckbox({
+export function ShelterLayerCheckbox({
   setLayers,
   map,
 }: {
@@ -24,10 +24,10 @@ export function SchoolLayerCheckbox({
 }) {
   const [checked, setChecked] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
-  const [selectedSchools, setSelectedSchools] = useState<FeatureLike[]>([]);
+  const [selectedShelters, setSelectedShelters] = useState<FeatureLike[]>([]);
 
   function handleClick(e: MapBrowserEvent<MouseEvent>) {
-    setSelectedSchools(map.getFeaturesAtPixel(e.pixel));
+    setSelectedShelters(map.getFeaturesAtPixel(e.pixel));
     overlay.setPosition(e.coordinate);
   }
 
@@ -38,19 +38,19 @@ export function SchoolLayerCheckbox({
 
   useEffect(() => {
     if (checked) {
-      setLayers((old) => [...old, schoolLayer]);
+      setLayers((old) => [...old, shelterLayer]);
       map.on("click", handleClick);
     } else {
-      setLayers((old) => old.filter((l) => l !== schoolLayer));
+      setLayers((old) => old.filter((l) => l !== shelterLayer));
     }
   }, [checked]);
   return (
     <button className="button" onClick={() => setChecked((b) => !b)}>
       <input className="checkbox" type={"checkbox"} checked={checked} />
-      Show schools
+      Show shelters
       <div ref={overlayRef}>
-        Clicked schools:{" "}
-        {selectedSchools.map((s) => s.getProperties().navn).join(", ")}
+        Clicked shelters:{" "}
+        {selectedShelters.map((s) => s.getProperties().navn).join(", ")}
       </div>
     </button>
   );
