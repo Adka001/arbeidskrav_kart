@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "/arbeidskrav_kart/",
+    base: "/arbeidskrav_kart",
 });
