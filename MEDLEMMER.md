@@ -1,7 +1,7 @@
 ## Gruppemedlemmer
 
-Adka001
+Adrian Kastrati (Adka001)
 
 ## Denne repository gruppe
 
-Adka001
+Adrian Kastrati (Adka001)
