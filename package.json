@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc --noEmit",
+    "test": "tsc --noEmit && prettier --check .",
     "dev": "vite",
     "prepare": "husky",
     "build": "vite build"
@@ -30,6 +30,7 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "ol": "^10.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

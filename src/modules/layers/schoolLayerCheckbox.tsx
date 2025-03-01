@@ -45,12 +45,14 @@ export function SchoolLayerCheckbox({
     }
   }, [checked]);
   return (
-    <button className="button" onClick={() => setChecked((b) => !b)}>
+    <button
+      className="button btn btn-outline-primary"
+      onClick={() => setChecked((b) => !b)}
+    >
       <input className="checkbox" type={"checkbox"} checked={checked} />
       Show schools
-      <div ref={overlayRef}>
-        School:{" "}
-        {selectedSchools.map((s) => s.getProperties().navn).join(", ")}
+      <div ref={overlayRef} className="overlaystyle">
+        School: {selectedSchools.map((s) => s.getProperties().navn).join(", ")}
       </div>
     </button>
   );

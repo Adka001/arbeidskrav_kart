@@ -45,10 +45,13 @@ export function ShelterLayerCheckbox({
     }
   }, [checked]);
   return (
-    <button className="button" onClick={() => setChecked((b) => !b)}>
+    <button
+      className="button btn btn-outline-primary"
+      onClick={() => setChecked((b) => !b)}
+    >
       <input className="checkbox" type={"checkbox"} checked={checked} />
       Show shelters
-      <div ref={overlayRef}>
+      <div ref={overlayRef} className="overlaystyle">
         Shelter address:{" "}
         {selectedShelters.map((s) => s.getProperties().adresse).join(", ")}
       </div>
