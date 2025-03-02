@@ -1,7 +1,11 @@
 ## Gruppemedlemmer
 
-Adrian Kastrati (Adka001)
+Adrian Kastrati
+Therese Nguyen
+Remal Ayaz
+Marianne Eriksen
 
 ## Denne repository gruppe
 
-Adrian Kastrati (Adka001)
+Adrian Kastrati
+Marianne Eriksen
