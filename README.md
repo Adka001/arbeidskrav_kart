@@ -2,7 +2,7 @@
 
 # KWS2100 Assignment 1
 
-Github pages: https://kristiania-kws2100-2025.github.io/kws2100-arbeidskrav-Adka001
+Github pages: https://Adka001.github.io/arbeidskrav_kart
 
 The goal of this assignment is to verify that you're able to deploy a working web application:
 
